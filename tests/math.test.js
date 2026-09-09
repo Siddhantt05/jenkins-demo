@@ -26,6 +26,6 @@ describe("Math utilities", () => {
 
 
     test("multiply two numbers", () => {
-        expect(subtract(10, 2)).toBe(20);
+        expect(multiply(10, 2)).toBe(20);
     });
 });
