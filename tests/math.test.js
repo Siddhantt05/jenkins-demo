@@ -1,7 +1,8 @@
 const {
     add,
     subtract,
-    calculateDiscount
+    calculateDiscount,
+    multiply
 } = require("../src/math");
 
 describe("Math utilities", () => {
@@ -23,4 +24,8 @@ describe("Math utilities", () => {
             .toThrow("Invalid price or discount");
     });
 
+
+    test("multiply two numbers", () => {
+        expect(subtract(10, 2)).toBe(20);
+    });
 });
