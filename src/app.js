@@ -20,6 +20,11 @@ app.get("/yt",(req,res)=>{
         mssg:"this is youtube"
     })
 });
+app.get("/checkingfeature",(req,res)=>{
+    res.json({
+        mssg : "In feature branch"
+    })
+})
 app.get("/api/add", (req, res) => {
     const a = Number(req.query.a);
     const b = Number(req.query.b);
