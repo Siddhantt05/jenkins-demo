@@ -6,7 +6,7 @@ function subtract(a, b) {
     return a - b;
 }
 
-function multiply(a, b) {
+function multip(a, b) {
     return a * b;
 }
 
@@ -22,5 +22,5 @@ module.exports = {
     add,
     subtract,
     calculateDiscount,
-    multiply
+    multip
 };
