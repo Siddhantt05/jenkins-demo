@@ -10,7 +10,7 @@ app.get("/health", (req, res) => {
         version: process.env.APP_VERSION || "dev"
     });
 });
-app.get("isworking",(req,res)=>{
+app.get("/isworking",(req,res)=>{
     res.json({
         mssg:"It is working"
     })
