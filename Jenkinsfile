@@ -120,6 +120,7 @@ pipeline {
                 '''
             }
         }
+        
 
         stage('Smoke Test') {
 
@@ -134,6 +135,15 @@ pipeline {
                 '''
             }
         }
+        stage('Cleanup Old Releases') {
+    steps {
+        sh '''
+            cd /var/www/myapp/releases
+
+            ls -1dt */ | tail -n +4 | xargs -r rm -rf
+        '''
+    }
+}
     }
 
     post {
