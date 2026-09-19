@@ -14,7 +14,12 @@ app.get("/isworking",(req,res)=>{
     res.json({
         mssg:"It is working"
     })
-})
+});
+app.get("/yt",(req,res)=>{
+    res.json({
+        mssg:"this is youtube"
+    })
+});
 app.get("/api/add", (req, res) => {
     const a = Number(req.query.a);
     const b = Number(req.query.b);
