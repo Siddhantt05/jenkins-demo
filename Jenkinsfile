@@ -138,7 +138,7 @@ pipeline {
         stage('Cleanup Old Releases') {
     steps {
         sh '''
-            cd /var/www/myapp/releases
+            cd /opt/cicd-demo/node/releases
 
             ls -1dt */ | tail -n +4 | xargs -r rm -rf
         '''
