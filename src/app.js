@@ -37,7 +37,7 @@ app.get("/api/multip", (req, res) => {
     }
 
     return res.json({
-        result:  multiply(a, b)
+        result:  multip(a, b)
     });
 });
 

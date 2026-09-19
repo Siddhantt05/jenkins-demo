@@ -2,7 +2,7 @@ const {
     add,
     subtract,
     calculateDiscount,
-    multiply
+    multip
 } = require("../src/math");
 
 describe("Math utilities", () => {
@@ -26,6 +26,6 @@ describe("Math utilities", () => {
 
 
     test("multiply two numbers", () => {
-        expect(multiply(10, 2)).toBe(20);
+        expect(multip(10, 2)).toBe(20);
     });
 });
