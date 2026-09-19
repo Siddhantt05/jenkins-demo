@@ -10,7 +10,11 @@ app.get("/health", (req, res) => {
         version: process.env.APP_VERSION || "dev"
     });
 });
-
+app.get("isworking",(req,res)=>{
+    res.json({
+        mssg:"It is working"
+    })
+})
 app.get("/api/add", (req, res) => {
     const a = Number(req.query.a);
     const b = Number(req.query.b);
